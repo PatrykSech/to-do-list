@@ -12,3 +12,7 @@ this is a to-do list that I created as part of my practice. Currently, it contai
 - Media queries
 - BEM
 - GIT
+
+## DEMO
+
+patryksech.github.io/to-do-list/

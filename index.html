@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="script.js"></script>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap'); </style>
     <title>Document</title>
 </head>
-<body>
+<body class="body">
     <main>
-        <form class="js-form">
-            <input class="js-newTask">
-            <button>wyślij</button>
-        </form>
+        <h1 class="header">Lista zadań</h1>
+        <h2 class="header--secondary">Dodaj nowe zadanie</h2>
+        <section class="section">
+            <form class="js-form section__form">
+                <input class="js-newTask section__input" placeholder="Co jest do zrobienia?">
+                <button class="section__button">wyślij</button>
+            </form>
+        </section>
+        <h2 class="header--secondary">Lista zadań</h2>
         <ul class="js-tasks"></ul>
     </main>
 </body>

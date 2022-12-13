@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::after, ::before {
+    box-sizing: inherit;
+  }
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.header {
+    padding: 10px 0px;
+}
+
+.header--secondary {
+    padding: 15px 20px;
+    background-color: #fff;
+    font-size: 20px;
+    margin: 10px 0px 0px 0px
+}
+
+.section {
+    margin-top: 2px;
+    background-color: #fff;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+
+.section__button {
+    border: none;
+    background-color: teal;
+    padding: 11px 20px;
+    color: #fff;
+}
+
+.section__input {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.section__form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 15px;
+}

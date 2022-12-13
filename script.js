@@ -1,13 +1,11 @@
 {
-    const tasks = [
-    
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
         });
-            render();
+        render();
     };
 
     const removeTask = (index) => {
@@ -38,16 +36,18 @@
         });
 
     }
-    
+
     const render = () => {
         let htmlString = "";
-    
+
         for (const task of tasks) {
             htmlString += `
-            <li${task.done ? "  style=\"text-decoration: line-through\"" : ""}>
-            <button class="js-done">Zrobione?</button>
-            <button class="js-remove">Usuń</button>
-                ${task.content}
+            <li class="section__task">
+            <button class="js-done section_button-done">
+            ${task.done ? "✓" : ""}
+            </button>
+            <span ${task.done ? "class=\"section__task--done\"" : ""}>${task.content}</span>
+            <button class="js-remove section__button-remove">🗑</button>
             </li>
             `;
         };
@@ -57,26 +57,32 @@
         bindEvents();
     };
 
+    const onClickEvent = () => {
+        document.querySelector(".js-newTask").focus();
+        document.querySelector(".js-newTask").value = null;
+    }
+
     const onFormSubmit = (event) => {
-            event.preventDefault();
-    
+        event.preventDefault();
+
         const newTaskContent = document.querySelector('.js-newTask').value.trim();
-            console.log(newTaskContent);
-    
-        if (newTaskContent === ""){
-            return; 
+        console.log(newTaskContent);
+
+        if (newTaskContent === "") {
+            return;
         }
-            addNewTask(newTaskContent);
+
+        addNewTask(newTaskContent);
+
+        onClickEvent();
     };
 
     const init = () => {
-        render();
+        render(); 
 
-    const form = document.querySelector('.js-form');
-
-    form.addEventListener("submit", onFormSubmit);
+        const form = document.querySelector('.js-form');
+        form.addEventListener("submit", onFormSubmit);
     };
 
     init();
-    
-}
+};

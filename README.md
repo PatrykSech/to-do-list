@@ -15,4 +15,4 @@ this is a to-do list that I created as part of my practice. Currently, it contai
 
 ## DEMO
 
-patryksech.github.io/to-do-list/
+https://patryksech.github.io/to-do-list/

@@ -1,0 +1,54 @@
+.tasks__form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 15px;
+}
+
+.tasks__input {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.tasks__button {
+    border: none;
+    background-color: teal;
+    padding: 11px 20px;
+    color: #fff;
+}
+
+.task_button-done {
+    background-color: #2a9134;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: #fff;
+}
+
+.task_button-done:hover {
+    background-color: #33a43e;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.task__button-remove {
+    background-color: #c1121f;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.task__button-remove:hover {
+    background-color: #d83641;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .tasks__form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+}

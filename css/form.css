@@ -5,7 +5,7 @@
 }
 
 .tasks__input {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     padding: 10px 15px;
 }
 
@@ -17,31 +17,31 @@
 }
 
 .task_button-done {
-    background-color: #2a9134;
-    width: 40px;
-    height: 40px;
+    background-color: hsl(120, 61%, 34%);
+    width: 30px;
+    height: 30px;
     border: none;
     color: #fff;
 }
 
 .task_button-done:hover {
-    background-color: #33a43e;
-    width: 40px;
-    height: 40px;
+    background-color: hsl(120, 61%, 44%);
+    width: 30px;
+    height: 30px;
     border: none;
 }
 
 .task__button-remove {
-    background-color: #c1121f;
-    width: 40px;
-    height: 40px;
+    background-color: hsl(348, 83%, 52%);
+    width: 30px;
+    height: 30px;
     border: none;
 }
 
 .task__button-remove:hover {
-    background-color: #d83641;
-    width: 40px;
-    height: 40px;
+    background-color: hsl(348, 83%, 42%);
+    width: 30px;
+    height: 30px;
     border: none;
 }
 

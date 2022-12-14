@@ -9,9 +9,10 @@
     align-items: center;
     word-break: break-word;
     grid-gap: 20px;
-    padding: 15px 20px;
+    padding: 10px 15px;
     background-color: #fff;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
 }
 
 .list__task--done {

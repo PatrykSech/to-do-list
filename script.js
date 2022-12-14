@@ -5,6 +5,7 @@
         tasks.push({
             content: newTaskContent,
         });
+
         render();
     };
 
@@ -34,7 +35,6 @@
                 toggleDone(index);
             });
         });
-
     }
 
     const render = () => {

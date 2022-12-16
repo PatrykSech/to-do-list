@@ -10,7 +10,7 @@
     <link href="css/list.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>My own to-do-list</title>
+    <title>Lista zadań</title>
 </head>
 <body class="body">
     <main>
@@ -22,7 +22,10 @@
                     <button class="tasks__button">Dodaj zadanie</button>
                 </form>
         </section>
-        <h2 class="header header--secondary">Lista zadań</h2>
+        <section class="container_list js-tasks--buttons">
+            <h2 class="header header--secondary">Lista zadań</h2>
+            <p class="js-tasks--buttons"></p>
+        </section>
         <section class="container">
             <ul class="js-tasks list__tasks"></ul>
         </section>

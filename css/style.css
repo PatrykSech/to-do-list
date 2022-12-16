@@ -32,3 +32,8 @@ html {
     padding: 15px 20px;
     font-weight: 500;
 }
+
+.container_list {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}

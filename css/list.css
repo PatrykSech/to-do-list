@@ -18,3 +18,25 @@
 .list__task--done {
     text-decoration: line-through;
 }
+
+.list__button-hideDone, .list__button-hideAll {
+    border: 0;
+    text-decoration: none;
+    color: teal;
+    padding: 0px;
+    background-color: white;
+    transition: 1s;
+}
+
+.list__button-hideDone:hover, .list__button-hideAll:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.container__list {
+    display: grid;
+    grid-template-columns: 1fr auto auto 0px;
+    grid-gap: 15px;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 15px;
+}

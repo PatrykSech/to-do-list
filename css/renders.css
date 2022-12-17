@@ -6,6 +6,7 @@
     border: none;
     color: teal;
     background-color: transparent;
+    transition: 1s;
 }
 
 .evenButton--left:hover {
@@ -16,6 +17,7 @@
     border: none;
     color: teal;
     background-color: transparent;
+    transition: 1s;
 }
 
 .evenButton--right:hover  {
@@ -24,5 +26,4 @@
 
 .evenButton--right:disabled {
     color: grey;
-    transition: 1s;
 }

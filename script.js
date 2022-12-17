@@ -84,10 +84,12 @@
             tasksEvents.innerHTML = "";
         } else {
             tasksEvents.innerHTML = `
-            <button class="js-doneTasksHidden">
+            <button class="js-doneTasksHidden evenButton--left">
             ${hideDoneTasks ? "Pokaz" : "Ukryj"} ukończone
             </button>
-            <button class="js-allTasksDone">Ukończ wszytskie</button>
+            <button class="js-allTasksDone evenButton--right"
+            ${tasks.every(task => task.done) ? "disabled" : ""}>
+            Ukończ wszytskie</button>
             `;
         };
 

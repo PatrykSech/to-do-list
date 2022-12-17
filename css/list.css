@@ -22,7 +22,7 @@
 .list__button-hideDone, .list__button-hideAll {
     border: 0;
     text-decoration: none;
-    color: teal;
+    color: #008080;
     padding: 0px;
     background-color: white;
     transition: 1s;

@@ -1,0 +1,28 @@
+.tasksItemHidden {
+    display: none;
+}
+
+.evenButton--left {
+    border: none;
+    color: teal;
+    background-color: transparent;
+}
+
+.evenButton--left:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.evenButton--right  {
+    border: none;
+    color: teal;
+    background-color: transparent;
+}
+
+.evenButton--right:hover  {
+    color: hsl(180, 100%, 30%);
+}
+
+.evenButton--right:disabled {
+    color: grey;
+    transition: 1s;
+}

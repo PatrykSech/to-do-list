@@ -27,6 +27,14 @@
         render();
     };
 
+    const toggleAllDone = () => {
+    tasks = tasks.map((task) => ({
+        ...task,
+        done: true, 
+    }));
+        render();
+    }
+
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove")
 
@@ -64,19 +72,35 @@
     };
 
     const renderButtons = () => {
-        
+        const tasksEvents = document.querySelector('.js-tasksEvents')
+
+        if (tasks.length === 0){
+            tasksEvents.innerHTML = "";
+        } else {
+            tasksEvents.innerHTML = `
+            <button class="js-allTasksDone">Ukończ wszytskie</button>
+            <button class="js-doneTasksHidden">Ukryj ukończone</button>
+            `;
+        };
 
     };
 
     const bindButtonsEvents = () => {
+        const buttonAllTasksDone = document.querySelector('.js-allTasksDone');
+        const buttonHiddeDoneTasks = document.querySelector('.js-doneTasksHidden');
 
+        if (tasks.length !== 0){
+            buttonAllTasksDone.addEventListener("click", () => {
+                toggleAllDone();
+            });
+        };
     };
 
     const render = () => {
         renderTasks();
         renderButtons();
-        bindButtonsEvents();
         bindEvents();
+        bindButtonsEvents();
     };
 
     const onClickEvent = () => {

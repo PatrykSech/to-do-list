@@ -40,3 +40,7 @@
     background-color: white;
     margin-top: 15px;
 }
+
+.tasksItemHidden {
+    display: none;
+}

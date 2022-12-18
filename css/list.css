@@ -31,12 +31,3 @@
 .list__button-hideDone:hover, .list__button-hideAll:hover {
     color: hsl(180, 100%, 35%);
 }
-
-.container__list {
-    display: grid;
-    grid-template-columns: 1fr auto auto 0px;
-    grid-gap: 15px;
-    justify-content: space-between;
-    background-color: white;
-    margin-top: 15px;
-}

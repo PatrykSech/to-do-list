@@ -7,6 +7,7 @@
     color: teal;
     background-color: transparent;
     transition: 1s;
+    padding: 15px 15px;
 }
 
 .evenButton--left:hover {
@@ -18,6 +19,7 @@
     color: teal;
     background-color: transparent;
     transition: 1s;
+    padding: 15px 15px;
 }
 
 .evenButton--right:hover  {
@@ -26,4 +28,29 @@
 
 .evenButton--right:disabled {
     color: grey;
+}
+
+.container__event {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+@media (max-width: 767px){
+    .container__event {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px){
+    .container__event--buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        padding-bottom: 15px;
+
+    }
 }
